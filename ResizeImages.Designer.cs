@@ -82,6 +82,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Stream Deck Mini", "Stream Deck / MK.2", "Stream Deck +", "Stream Deck XL" });
@@ -89,6 +90,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(277, 23);
             comboBox1.TabIndex = 5;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -171,6 +173,7 @@
             label6.Name = "label6";
             label6.Size = new Size(0, 15);
             label6.TabIndex = 12;
+            label6.Click += label6_Click;
             // 
             // ResizeImages
             // 
