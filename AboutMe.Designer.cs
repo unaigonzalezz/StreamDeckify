@@ -33,6 +33,7 @@
             label1 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -85,12 +86,28 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(25, 25, 25);
+            label3.Cursor = Cursors.Hand;
+            label3.Font = new Font("Montserrat", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(33, 164, 241);
+            label3.Location = new Point(226, 135);
+            label3.Name = "label3";
+            label3.Size = new Size(318, 30);
+            label3.TabIndex = 4;
+            label3.Text = "https://unaigonzalez.es/links";
+            label3.UseCompatibleTextRendering = true;
+            label3.Click += label3_Click;
+            // 
             // AboutMe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(19, 19, 19);
             ClientSize = new Size(565, 191);
+            Controls.Add(label3);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -110,5 +127,6 @@
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
+        private Label label3;
     }
 }

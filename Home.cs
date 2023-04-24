@@ -22,8 +22,8 @@ namespace StreamDeckify
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Part1 Part1Form= new Part1();
-            Part1Form.Show();
+            ResizeImages resizeForm = new ResizeImages();
+            resizeForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

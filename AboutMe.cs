@@ -64,5 +64,16 @@ namespace StreamDeckify
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            label1.ForeColor = Color.FromArgb(33, 164, 241);
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://unaigonzalez.es/links",
+                UseShellExecute = true
+            });
+
+        }
     }
 }
