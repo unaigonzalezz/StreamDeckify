@@ -152,6 +152,7 @@
             label5.TabIndex = 10;
             label5.Text = "3. Save it!";
             label5.UseCompatibleTextRendering = true;
+            label5.Click += label5_Click;
             // 
             // button1
             // 

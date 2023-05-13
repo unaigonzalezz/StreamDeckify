@@ -37,6 +37,10 @@
             label3 = new Label();
             openFileDialog1 = new OpenFileDialog();
             label4 = new Label();
+            button1 = new Button();
+            label5 = new Label();
+            saveFileDialog1 = new SaveFileDialog();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -122,12 +126,48 @@
             label4.TabIndex = 13;
             label4.Click += label4_Click;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(420, 363);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 23);
+            button1.TabIndex = 15;
+            button1.Text = "Save";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Montserrat", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(420, 330);
+            label5.Name = "label5";
+            label5.Size = new Size(106, 30);
+            label5.TabIndex = 14;
+            label5.Text = "3. Save it!";
+            label5.UseCompatibleTextRendering = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.ButtonHighlight;
+            label6.Location = new Point(420, 398);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 15);
+            label6.TabIndex = 16;
+            // 
             // SplitImages
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(25, 25, 25);
             ClientSize = new Size(854, 450);
+            Controls.Add(label6);
+            Controls.Add(button1);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(browse);
             Controls.Add(label3);
@@ -153,5 +193,9 @@
         private Label label3;
         private OpenFileDialog openFileDialog1;
         private Label label4;
+        private Button button1;
+        private Label label5;
+        private SaveFileDialog saveFileDialog1;
+        private Label label6;
     }
 }
