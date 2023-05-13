@@ -85,7 +85,7 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Montserrat", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Stream Deck Mini", "Stream Deck / MK.2", "Stream Deck +", "Stream Deck XL" });
+            comboBox1.Items.AddRange(new object[] { "Stream Deck Mini (6 buttons)", "Stream Deck / MK.2 (15 buttons)", "Stream Deck + (8 buttons)", "Stream Deck XL (32 buttons)" });
             comboBox1.Location = new Point(438, 215);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(277, 23);

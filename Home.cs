@@ -29,6 +29,8 @@ namespace StreamDeckify
         private void button2_Click(object sender, EventArgs e)
         {
 
+            SplitImages splitForm = new SplitImages();
+            splitForm.Show();
         }
     }
 }
