@@ -39,8 +39,8 @@
             label4 = new Label();
             button1 = new Button();
             label5 = new Label();
-            saveFileDialog1 = new SaveFileDialog();
             label6 = new Label();
+            folderBrowserDialog1 = new FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -195,7 +195,7 @@
         private Label label4;
         private Button button1;
         private Label label5;
-        private SaveFileDialog saveFileDialog1;
         private Label label6;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }

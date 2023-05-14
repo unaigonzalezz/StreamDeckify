@@ -30,7 +30,7 @@ namespace StreamDeckify
             openFileDialog1.ShowDialog();
             openFileDialog1.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
             openFileDialog1.Title = "Open image";
-            string selectedFile = System.IO.Path.GetFileName(openFileDialog1.FileName); ;
+            string selectedFile = System.IO.Path.GetFileName(openFileDialog1.FileName); 
             label4.Text = selectedFile;
 
             int streamWidth = 310;
@@ -154,75 +154,61 @@ namespace StreamDeckify
 
             }
 
+            string imagePath = openFileDialog1.FileName;
 
-   
-            string gifPath = openFileDialog1.FileName;
-            Image gifImage = Image.FromFile(gifPath);
-            FrameDimension dimension = new FrameDimension(gifImage.FrameDimensionsList[0]);
-            int framesCount = gifImage.GetFrameCount(dimension);
-
-            // Itera por cada fotograma del GIF
-            for (int frameIndex = 0; frameIndex < framesCount; frameIndex++)
+            if (!File.Exists(imagePath))
             {
-                // Selecciona el fotograma actual
-                gifImage.SelectActiveFrame(dimension, frameIndex);
+                Console.WriteLine("La imagen no existe.");
+                return;
+            }
 
-                // Divide el fotograma en 15 partes de 72 pixeles cada una
-                int partWidth = 72;
-                int partHeight = gifImage.Height;
-                int x = 0;
-                int y = 0;
-                for (int partIndex = 0; partIndex < 15; partIndex++)
+            // Mostrar el cuadro de diálogo del selector de carpetas
+            var folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.Description = "Seleccione la carpeta de destino:";
+            folderBrowserDialog.RootFolder = Environment.SpecialFolder.Desktop;
+
+            if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
+            {
+                Console.WriteLine("No se seleccionó una carpeta de destino.");
+                return;
+            }
+
+            string outputDirectory = folderBrowserDialog1.SelectedPath;
+
+            try
+            {
+                using (var image = new MagickImage(imagePath))
                 {
-                    // Crea un nuevo bitmap para la parte actual
-                    Bitmap partBitmap = new Bitmap(partWidth, partHeight);
+                    // Redimensionar la imagen a 360x216 píxeles
+                    image.Resize(360, 216);
 
-                    // Copia los pixeles correspondientes a la parte actual
-                    for (int i = 0; i < partWidth; i++)
+                    // Dividir la imagen en 15 GIFs de 72x72 píxeles cada uno
+                    int x = 0;
+                    for (int i = 0; i < 3; i++)
                     {
-                        for (int j = 0; j < partHeight; j++)
+                        int y = 0;
+                        for (int j = 0; j < 5; j++)
                         {
-                            Color pixelColor = ((Bitmap)gifImage).GetPixel(x + i, y + j);
-                            partBitmap.SetPixel(i, j, pixelColor);
+                            var crop = new MagickGeometry(x, y, 72, 72);
+                            using (var croppedImage = image.Clone())
+                            {
+                                croppedImage.Crop(crop);
+                                croppedImage.Write(Path.Combine(outputDirectory, $"boton_{i}_{j}.gif"));
+                            }
+                            y += 72;
                         }
+                        x += 72;
                     }
-
-                    // Guarda la parte actual como un GIF independiente
-                    string partPath = $"{gifPath}_part{partIndex + 1}_frame{frameIndex + 1}.gif";
-                    partBitmap.Save(partPath, ImageFormat.Gif);
-
-                    // Incrementa la posición horizontal para la siguiente parte
-                    x += partWidth;
                 }
 
-                // Reinicia la posición horizontal y incrementa la posición vertical para la siguiente fila de partes
-                x = 0;
-                y += partHeight;
+                Console.WriteLine("La imagen se ha dividido correctamente.");
             }
-
-
-                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            saveFileDialog1.Title = "Guardar imagen";
-            string selectedFile = System.IO.Path.GetFileName(saveFileDialog1.FileName); ;
-
-            // Check if the OpenFileDialog has a file name
-            if (openFileDialog1.FileName != "")
+            catch (MagickException ex)
             {
-                // Set the initial directory and file name for the SaveFileDialog
-                saveFileDialog1.InitialDirectory = openFileDialog1.InitialDirectory;
-                saveFileDialog1.FileName = openFileDialog1.FileName;
-            }
-
-            // Show the SaveFileDialog to the user
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                // Redimensiona la imagen original
-                Image imagenOriginal = Image.FromFile(openFileDialog1.FileName);
-                Image imagenRedimensionada = imagenOriginal.GetThumbnailImage(streamWidth, streamHeight, null, IntPtr.Zero);
-                imagenRedimensionada.Save(saveFileDialog1.FileName);
-                label6.Text = "Done! Your new wallwaper is on: \n" + saveFileDialog1.FileName;
+                Console.WriteLine($"Error al dividir la imagen: {ex.Message}");
             }
         }
+
+        }
     }
-}
+
