@@ -2,7 +2,6 @@
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://gcdnb.pbrd.co/images/uI6W8ORLHO4L.png" alt="StreamDeckify" ></a>
-  <br>
 </h1>
 <h3 align="center">Create custom Wallwapers for your StreamDeck!</h3>
 
