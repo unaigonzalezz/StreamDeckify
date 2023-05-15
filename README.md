@@ -1,4 +1,4 @@
-![Logo of StreamDeckify](https://i.postimg.cc/Bnw8wSgG/Logo-Text-1.png) 
+![Logo of StreamDeckify](https://gcdnb.pbrd.co/images/uI6W8ORLHO4L.png)
 
 
 ![enter image description here](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Made with .NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![Made with Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)  ![Works in Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Visit my website!](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)  ![@unaiitxuu](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white) ![@unaiitxuu](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)
