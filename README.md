@@ -26,13 +26,13 @@ StreamDeckify is a versatile Windows tool that includes two modules for creating
 -   Image file formats supported by the application (JPG, PNG, and GIF)
 
 ## To-do list
- ✅ Resize module done.
- 🆙 Display GIF in motion in Split Images module.
- 🆙 Correctly split GIFs and resize the images in Split images module.
- 🆙 Option to create the profiles with the GIFs inside.
- 🆙 Exception control.
- 🆙 Web page.
- 🆙 More modules.
+ - ✅ Resize module done.
+ - 🆙 Display GIF in motion in Split Images module.
+ - 🆙 Correctly split GIFs and resize the images in Split images module.
+ - 🆙 Option to create the profiles with the GIFs inside.
+ - 🆙 Exception control.
+ - 🆙 Web page.
+ - 🆙 More modules.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
