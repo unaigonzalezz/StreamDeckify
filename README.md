@@ -4,7 +4,7 @@
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://gcdnb.pbrd.co/images/uI6W8ORLHO4L.png" alt="StreamDeckify" ></a>
   <br>
 </h1>
-<h3 align="center">Create custom Wallwapers for your StreamDeck!.</h3>
+<h3 align="center">Create custom Wallwapers for your StreamDeck!</h3>
 
 ![Made in C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Made with .NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![Made with Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)  ![Works in Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Visit my website!](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)  ![@unaiitxuu](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white) ![@unaiitxuu](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white) ![Buy me a coffee!](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white) ![Donate me!](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
 
@@ -19,7 +19,7 @@
   <a href="#license">License</a>
 </p>
 
-![Main of the app](https://i.ibb.co/94S0xNZ/Cap.jpg)
+![Main of the app](https://gcdnb.pbrd.co/images/9wr81iVscGQ1.jpg)
 
 StreamDeckify is a versatile Windows tool that includes two modules for creating customized wallpapers for your StreamDeck. The first module allows you to easily resize images, while the second module lets you resize and split GIFs into parts. With StreamDeckify, you can create stunning wallpapers that perfectly fit your StreamDeck, making it easier than ever to customize your setup and make it truly your own. Whether you're a gamer, streamer, or just looking for a unique way to personalize your desktop, StreamDeckify is the perfect tool for creating eye-catching wallpapers that will set your StreamDeck apart.
 
