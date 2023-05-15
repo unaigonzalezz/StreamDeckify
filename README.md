@@ -71,12 +71,12 @@ You can [download](https://github.com/unaigonzalezz/IMG2PBR/releases) the latest
 
 ## Support
 
-<a href="#" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/unaiitxuu" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 <p>Or</p> 
 
-<a href="#">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+<a href="https://ko-fi.com/unaigonzalez">
+	<img src="https://camo.githubusercontent.com/8eaa0f9417ab0a8b1a4a284fa97a4a04e90c1064418f7deddd30dd2642c8906c/68747470733a2f2f63646e2e6b6f2d66692e636f6d2f63646e2f6b6f6669332e706e673f763d33" width="160">
 </a>
 
 ## Contributing
